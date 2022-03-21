@@ -57,7 +57,7 @@ if [ -n "$NGROK_REMOTE_ADDR" ]; then
     echo "You must specify an authentication token after registering at https://ngrok.com to use reserved ip addresses."
     exit 1
   fi
-  ARGS="$ARGS -remote-addr=$NGROK_REMOTE_ADDR "
+  ARGS="$ARGS --remote-addr=$NGROK_REMOTE_ADDR "
 fi
 
 # Set a custom region
